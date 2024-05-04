@@ -6,15 +6,19 @@ const clicks=()=>{
     const clickOut= window;
     let navbar=document.getElementById("navi");
     
-    if(navbar.style.display.endsWith("none") && mediaQuery){
+    if(navbar.style.display.endsWith("block") && mediaQuery){
        clickOut.addEventListener("scroll", ()=>{
+            navbar.style.display="none"
+        })
+    } else if(navbar.style.display.endsWith("none") && mediaQuery){
+        clickOut.addEventListener("scroll", ()=>{
             navbar.style.display="block"
         })
     } else{
         clickOut.addEventListener("scroll", ()=>{
-            navbar.style.display="none"
+            navbar.style.display="block"
         })
-    };
+    }
 
 }
 
