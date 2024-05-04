@@ -6,12 +6,14 @@ const clicks=()=>{
     const clickOut= window;
     let navbar=document.getElementById("navi");
     
-    if(navbar.style.display.endsWith("block") &&mediaQuery){
-       return clickOut.addEventListener("scroll", ()=>{
+    if(navbar.style.display.endsWith("block") && mediaQuery){
+       clickOut.addEventListener("scroll", ()=>{
             navbar.style.display="none"
         })
     } else{
-        navbar.style.display="block"
+        clickOut.addEventListener("scroll", ()=>{
+            navbar.style.display="block"
+        })
     };
 
 }
