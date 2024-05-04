@@ -282,7 +282,7 @@ nav{
 }
 
 .note_para{
-    overflow:scroll;
+    overflow:auto;
     /* overflow-y: hidden; */
     /* overflow-x: hidden; */
     
