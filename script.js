@@ -6,7 +6,7 @@ const clicks=()=>{
     const clickOut= window;
     let navbar=document.getElementById("navi");
     
-    if(navbar.style.display.endsWith("block")||mediaQuery){
+    if(navbar.style.display.endsWith("block") &&mediaQuery){
        return clickOut.addEventListener("scroll", ()=>{
             navbar.style.display="none"
         })
