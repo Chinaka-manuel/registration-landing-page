@@ -1,0 +1,300 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+html, body{
+    width: 100%;
+    height: 100%;
+}
+
+a{
+    color: darkblue;
+    text-decoration: none;
+}
+
+.container{
+    background-color:rgb(246, 252, 252);
+    padding: 20px;
+    padding-top:30px !important ;
+   
+    padding-bottom: 100px;
+    min-height:100dvh;
+    max-width: 100dvw;
+    overflow:auto;
+  
+}
+
+
+
+.montserrat-teekay {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+header{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    min-height: 100px;
+    align-items: center;
+    padding-top: 10px;
+    margin-bottom: 10px;
+    
+   
+}
+.logo{
+    width: 200px;
+    justify-self: center;
+    height: 100px;
+
+}
+#navi{
+    top: 20px;
+    display: block;
+}
+
+.hori-nav ul{
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.hori-nav ul li{
+    list-style-type: none;
+    margin-right: 10px;
+    font-size: 20px;
+    font-weight: bolder;
+
+}
+.hori-nav ul a{
+    text-decoration: none;
+    transition: all 0.5ms;
+}
+
+.hori-nav ul a:hover{
+    color: rgb(207, 38, 38);
+}
+
+#menuslid{
+    min-height: 40px;
+    min-width: 30px;
+    font-size: 10px;
+    display: none;
+}
+
+.discover{
+    font-size:10dvw;
+    
+}
+.the{
+    display: inline-block;
+    font-size: 3dvw;
+    padding: 10px;
+    height: 50px;
+    font-weight: bold;
+    
+    
+}
+
+.future{
+    font-size: 15dvw;
+    line-height: 120px;
+    font-weight: bold;
+    color: rgb(7, 7, 111);
+}
+
+.first-sec{
+    display: grid;
+    position: relative;
+}
+
+
+.head-note{
+    margin-bottom: 70px;
+}
+.note {
+    max-width:50dvw;
+    max-height: 500px;
+    z-index: 4;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    
+}
+.note q{
+    overflow: scroll;
+    padding: 20px;
+    border-radius: 5px;
+    max-height: 400px;
+    
+    
+}
+   
+
+.note .regbtn{
+    margin:20px;
+    
+}
+
+.regbtn button{
+    display: inline-block;
+    min-height: 40px;
+    min-width: 200px;
+    background-color: rgb(33, 33, 143);
+    font-size: 20px;
+   
+    border-radius: 5px;
+    margin-left: 0px;
+    transition: all 0.5s;
+}
+
+.regbtn button a{
+    color: wheat;
+
+}
+
+.regbtn button a:hover{
+    color: rgb(90, 14, 14);
+}
+
+.regbtn button:hover{
+    background-color: rgb(78, 78, 238);
+    color: black;
+}
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    min-height: 100px;
+    max-width: 100dvw;
+    margin-bottom: -100px;
+    background-color:rgb(33, 39, 149);
+    color:aliceblue;
+    padding: 20px;
+    gap: 30px;
+    padding-bottom: 5px;
+}
+
+.footersub{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 60px;
+}
+
+address{
+    max-width: 400px;
+}
+.imgicons{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+
+@media screen and (max-width:700px) {
+
+    .head-note{
+        margin-bottom: 20px;
+    }
+
+    .future{
+        font-size: 20dvw;
+        line-height: 60px; 
+        
+        
+    }
+
+    
+.discover{
+    font-size:12dvw;
+}
+.the{
+    font-size: 6dvw;
+    padding: 10px;
+    height: 50px;
+    font-weight: bold;
+    
+}
+
+
+.note .regbtn{
+    margin-top: 50px;    
+}
+
+
+nav{
+    display:none;
+}
+
+.hori-nav{
+   
+    display: flex;
+    justify-content: right;
+    align-items: right;
+    
+
+
+}
+
+.hori-nav ul{
+    position: absolute;
+    margin-top:50px;
+    right:0px;
+    z-index: 5;
+    border-radius: 3px;
+    display: block;
+    flex-wrap: wrap;
+    background-color:rgb(5, 7, 42) ;
+    max-height: auto;
+    min-width: 120px;
+}
+.hori-nav ul li{
+    list-style-type: none;
+    margin: 30px 10px;
+    font-size: 20px;
+    font-weight: bolder;
+    border-bottom: 1px solid rgb(183, 187, 191);
+
+}
+.hori-nav ul a{
+    text-decoration: none;
+    color: rgb(183, 187, 191);
+    font-size: 20px;
+    display: block;
+    min-height: 30px;
+    
+}
+
+.hori-nav ul a:hover{
+    color: rgb(134, 103, 23);
+}
+#menuslid{
+    display: block;
+}
+#navi{
+    
+    display: none;
+    z-index: 5;
+}
+
+.note_para{
+    overflow:scroll;
+    /* overflow-y: hidden; */
+    /* overflow-x: hidden; */
+    
+}
+.smalltrd{
+    color: white;
+}
+address{
+    justify-self: center;
+    align-self: center;
+}
+
+    
+}
+
