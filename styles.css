@@ -149,6 +149,7 @@ header{
     min-width: 200px;
     background-color: rgb(33, 33, 143);
     font-size: 20px;
+     box-shadow: 8px 8px 5px  rgb(184, 182, 182);
    
     border-radius: 5px;
     margin-left: 0px;
@@ -268,7 +269,7 @@ nav{
     margin: 30px 10px;
     font-size: 20px;
     font-weight: bolder;
-    border-bottom: 1px solid rgb(183, 187, 191);
+    border-bottom: 1px solid rgba(183, 187, 191, 0.5);
 
 }
 .hori-nav ul a{
@@ -277,6 +278,7 @@ nav{
     font-size: 20px;
     display: block;
     min-height: 30px;
+    transition: all 0.3s;
     
 }
 
@@ -299,7 +301,7 @@ nav{
     
 }
 .smalltrd{
-    color: white;
+    color: rgb(208, 205, 205);
 }
 address{
     justify-self: center;
